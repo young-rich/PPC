@@ -16,7 +16,7 @@ seed_everything(seed, workers=True)
 np.random.seed(seed)
 torch.cuda.manual_seed_all(seed)
 
-df = pd.read_pickle('/home/yx/肺部并发症预测/Data/model_data.pkl')  # 读取数据
+df = pd.read_pickle('model_data.pkl')  # 读取数据
 
 entity_vocab = get_vocab(df)  # 获取术前诊断的词表
 
